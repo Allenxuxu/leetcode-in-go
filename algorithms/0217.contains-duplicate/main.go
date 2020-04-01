@@ -17,7 +17,7 @@ func containsDuplicate1(nums []int) bool {
 func containsDuplicate2(nums []int) bool {
 	tmp := make(map[int]bool, len(nums))
 
-	for k, _ := range nums {
+	for k := range nums {
 		if tmp[nums[k]] {
 			return true
 		}
