@@ -1,0 +1,35 @@
+package algorithm
+
+func moveZeroes(nums []int) {
+	for i, j := 0, 1; i < len(nums) && j < len(nums); {
+		if nums[i] == 0 {
+			if nums[j] == 0 {
+				j++
+			} else {
+				nums[i], nums[j] = nums[j], nums[i]
+				i++
+				j++
+			}
+		} else {
+			i++
+			j++
+		}
+	}
+}
+
+func moveZeroes1(nums []int) {
+	var (
+		index int
+		i     int
+	)
+	for i, index = 0, 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			nums[index] = nums[i]
+			index++
+		}
+	}
+
+	for j := index; j < len(nums); j++ {
+		nums[j] = 0
+	}
+}
