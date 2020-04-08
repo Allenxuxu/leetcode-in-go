@@ -1,5 +1,7 @@
 package algorithm
 
+// 时间复杂度 O(n)
+// 空间复杂度 O(1)
 func moveZeroes(nums []int) {
 	for i, j := 0, 1; i < len(nums) && j < len(nums); {
 		if nums[i] == 0 {
@@ -17,6 +19,8 @@ func moveZeroes(nums []int) {
 	}
 }
 
+// 时间复杂度 O(n)
+// 空间复杂度 O(1)
 func moveZeroes1(nums []int) {
 	var (
 		index int

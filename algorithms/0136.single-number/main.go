@@ -5,7 +5,10 @@ import (
 )
 
 // 排序
-// 时间复杂度 不为 O(n)
+// 时间复杂度 O(n*log(n))
+// 空间复杂度 O(1)
+// 先排序，然后成对判断，步进2（i += 2, j += 2）
+// 如果这一对不相等，则返回 nums[i]
 func singleNumber(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
@@ -26,7 +29,10 @@ func singleNumber(nums []int) int {
 // 实现： 略
 
 // map
-// 空间复杂度 不为 O(1)
+// 时间复杂度 O(n)
+// 空间复杂度 O(n)
+// 遍历数组，将 元素作为 v 存入标记， 如果发现当前 v 已经存在 则 delete 当前元素
+// 遍历完成后， map 中只剩一个元素
 func singleNumber1(nums []int) int {
 	tmp := make(map[int]interface{})
 	for _, v := range nums {
@@ -46,7 +52,9 @@ func singleNumber1(nums []int) int {
 	return -1
 }
 
-// 异或操作
+// 异或操作 相同为 1 ，相异为 0
+// 时间复杂度 O(n)
+// 空间复杂度 O(1)
 func singleNumber2(nums []int) int {
 	var ret int
 	for i := 0; i < len(nums); i++ {
