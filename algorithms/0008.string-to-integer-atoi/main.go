@@ -21,10 +21,7 @@ func myAtoi(str string) int {
 	}
 
 	index := strings.IndexFunc(str, func(r rune) bool {
-		if !unicode.IsDigit(r) {
-			return true
-		}
-		return false
+		return !unicode.IsDigit(r)
 	})
 	if index == -1 {
 		index = len(str)
