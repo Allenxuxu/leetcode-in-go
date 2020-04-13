@@ -21,3 +21,15 @@ func reverseList(head *ListNode) *ListNode {
 
 	return pre
 }
+
+func reverseList1(head *ListNode) *ListNode {
+	if head.Next == nil || head == nil {
+		return head
+	}
+
+	current := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+
+	return current
+}
