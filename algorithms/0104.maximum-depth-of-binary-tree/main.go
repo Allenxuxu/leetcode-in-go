@@ -1,6 +1,8 @@
 package algorithm
 
-import "container/list"
+import (
+	"github.com/Allenxuxu/toolkit/queue"
+)
 
 type TreeNode struct {
 	Val   int
@@ -39,23 +41,21 @@ func maxDepth1(root *TreeNode) int {
 	var (
 		ret int
 	)
-	queue := list.New()
-	queue.PushBack(&Entry{
+	queue := queue.New()
+	queue.Push(&Entry{
 		TreeNode: root,
 		Level:    1,
 	})
 	for queue.Len() != 0 {
-		item := queue.Front()
-		node := item.Value.(*Entry)
-		queue.Remove(item)
+		node := queue.Pop().(*Entry)
 		if node.Left != nil {
-			queue.PushBack(&Entry{
+			queue.Push(&Entry{
 				TreeNode: node.Left,
 				Level:    node.Level + 1,
 			})
 		}
 		if node.Right != nil {
-			queue.PushBack(&Entry{
+			queue.Push(&Entry{
 				TreeNode: node.Right,
 				Level:    node.Level + 1,
 			})
