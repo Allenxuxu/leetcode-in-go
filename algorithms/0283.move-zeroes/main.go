@@ -44,3 +44,24 @@ func moveZeroes1(nums []int) {
 		nums[j] = 0
 	}
 }
+
+func moveZeroes2(nums []int) {
+	var j int
+	for i := 0; i < len(nums); i++ {
+		if nums[i] != 0 {
+			nums[i], nums[j] = nums[j], nums[i]
+			j++
+		}
+	}
+}
+
+func moveZeroes3(nums []int) {
+	count := 0
+	for i := 0; i < len(nums); i++ {
+		if nums[i] == 0 {
+			count++
+		} else {
+			nums[i-count], nums[i] = nums[i], nums[i-count]
+		}
+	}
+}
