@@ -24,39 +24,50 @@ type ans struct {
 	one []int
 }
 
+var qs = []question{
+
+	question{
+		para{[]int{}},
+		ans{[]int{}},
+	},
+
+	question{
+		para{[]int{1}},
+		ans{[]int{1}},
+	},
+
+	question{
+		para{[]int{1, 2, 3, 4}},
+		ans{[]int{2, 1, 4, 3}},
+	},
+
+	question{
+		para{[]int{1, 2, 3, 4, 5}},
+		ans{[]int{2, 1, 4, 3, 5}},
+	},
+
+	// 如需多个测试，可以复制上方元素。
+}
+
 func Test_swapPairs(t *testing.T) {
 	ast := assert.New(t)
-
-	qs := []question{
-
-		question{
-			para{[]int{}},
-			ans{[]int{}},
-		},
-
-		question{
-			para{[]int{1}},
-			ans{[]int{1}},
-		},
-
-		question{
-			para{[]int{1, 2, 3, 4}},
-			ans{[]int{2, 1, 4, 3}},
-		},
-
-		question{
-			para{[]int{1, 2, 3, 4, 5}},
-			ans{[]int{2, 1, 4, 3, 5}},
-		},
-
-		// 如需多个测试，可以复制上方元素。
-	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, l2s(swapPairs(s2l(p.one))), "输入:%v", p)
+	}
+}
+
+func Test_swapPairs1(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, l2s(swapPairs1(s2l(p.one))), "输入:%v", p)
 	}
 }
 

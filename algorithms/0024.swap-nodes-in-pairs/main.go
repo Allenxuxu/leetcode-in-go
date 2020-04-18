@@ -27,3 +27,16 @@ func swapPairs(head *ListNode) *ListNode {
 
 	return dummy.Next
 }
+
+func swapPairs1(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	f := head
+	s := head.Next
+	f.Next = swapPairs1(s.Next)
+	s.Next = f
+
+	return s
+}
