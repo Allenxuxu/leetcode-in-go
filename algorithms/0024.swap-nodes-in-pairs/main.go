@@ -40,3 +40,22 @@ func swapPairs1(head *ListNode) *ListNode {
 
 	return s
 }
+
+func swapPairs2(head *ListNode) *ListNode {
+	if head == nil {
+		return head
+	}
+
+	var dummy = new(ListNode)
+	dummy.Next = head
+	pre, first, second := dummy, head, head.Next
+	for first != nil && second != nil {
+		pre.Next = second
+		second.Next, first.Next, pre, first = first, second.Next, first, first.Next.Next
+
+		if first != nil {
+			second = first.Next
+		}
+	}
+	return dummy.Next
+}
