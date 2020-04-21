@@ -21,12 +21,10 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 			break
 		}
 
-		start := pre.Next
-		next := end.Next
+		start, next := pre.Next, end.Next
 		pre.Next = reverseList(start, end.Next)
 		start.Next = next
-		pre = start
-		end = pre
+		pre, end = start, start
 	}
 	return dummy.Next
 }
