@@ -71,6 +71,17 @@ func Test_swapPairs1(t *testing.T) {
 	}
 }
 
+func Test_swapPairs2(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, l2s(swapPairs2(s2l(p.one))), "输入:%v", p)
+	}
+}
+
 // convert *ListNode to []int
 func l2s(head *ListNode) []int {
 	res := []int{}

@@ -23,51 +23,53 @@ type ans struct {
 	one [][]int
 }
 
+var qs = []question{
+
+	question{
+		para{[]int{1, -1, -1, 0}},
+		ans{[][]int{
+			[]int{-1, 0, 1},
+		}},
+	},
+	question{
+		para{[]int{-1, 0, 1, 0}},
+		ans{[][]int{
+			[]int{-1, 0, 1},
+		}},
+	},
+
+	question{
+		para{[]int{0, 0, 0}},
+		ans{[][]int{
+			[]int{0, 0, 0},
+		}},
+	},
+
+	question{
+		para{[]int{-2, 0, 1, 1, 2}},
+		ans{[][]int{
+			[]int{-2, 0, 2},
+			[]int{-2, 1, 1},
+		}},
+	},
+
+	// 如需多个测试，可以复制上方元素。
+}
+
 func Test_Problem0015(t *testing.T) {
 	ast := assert.New(t)
-
-	qs := []question{
-
-		question{
-			para{[]int{1, -1, -1, 0}},
-			ans{[][]int{
-				[]int{-1, 0, 1},
-			}},
-		},
-		question{
-			para{[]int{-1, 0, 1, 0}},
-			ans{[][]int{
-				[]int{-1, 0, 1},
-			}},
-		},
-
-		question{
-			para{[]int{-1, 0, 1, 2, -1, -4}},
-			ans{[][]int{
-				[]int{-1, -1, 2},
-				[]int{-1, 0, 1},
-			}},
-		},
-		question{
-			para{[]int{0, 0, 0}},
-			ans{[][]int{
-				[]int{0, 0, 0},
-			}},
-		},
-
-		question{
-			para{[]int{-2, 0, 1, 1, 2}},
-			ans{[][]int{
-				[]int{-2, 0, 2},
-				[]int{-2, 1, 1},
-			}},
-		},
-
-		// 如需多个测试，可以复制上方元素。
-	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		ast.Equal(a.one, threeSum(p.one), "输入:%v", p)
+	}
+}
+
+func Test_Problem0015_1(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		ast.Equal(a.one, threeSum1(p.one), "输入:%v", p)
 	}
 }
