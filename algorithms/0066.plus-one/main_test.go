@@ -26,8 +26,7 @@ type ans struct {
 
 func Test_Problem0066(t *testing.T) {
 	ast := assert.New(t)
-
-	qs := []question{
+	var qs = []question{
 
 		question{
 			para{[]int{1, 2, 3}},
@@ -49,11 +48,42 @@ func Test_Problem0066(t *testing.T) {
 			ans{[]int{1, 0}},
 		},
 	}
-
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, plusOne(p.one), "输入:%v", p)
+	}
+}
+
+func Test_Problem0066_1(t *testing.T) {
+	ast := assert.New(t)
+	var qs = []question{
+
+		question{
+			para{[]int{1, 2, 3}},
+			ans{[]int{1, 2, 4}},
+		},
+
+		question{
+			para{[]int{0}},
+			ans{[]int{1}},
+		},
+
+		question{
+			para{[]int{9, 9}},
+			ans{[]int{1, 0, 0}},
+		},
+
+		question{
+			para{[]int{9}},
+			ans{[]int{1, 0}},
+		},
+	}
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, plusOne1(p.one), "输入:%v", p)
 	}
 }
