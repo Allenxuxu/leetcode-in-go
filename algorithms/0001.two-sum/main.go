@@ -29,6 +29,7 @@ func twoSum1(nums []int, target int) []int {
 	var ret []int
 	m := make(map[int]int, len(nums))
 	for k, v := range nums {
+		// 先比较，在赋值，避免重复元素被覆盖
 		need := target - v
 		if e, ok := m[need]; ok && e != k {
 			ret = append(ret, e, k)
