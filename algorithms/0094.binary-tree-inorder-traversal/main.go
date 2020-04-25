@@ -21,21 +21,6 @@ func helper(root *TreeNode, data *[]int) {
 	helper(root.Right, data)
 }
 
-func preorderTraversal(root *TreeNode) []int {
-	var ret []int
-	helperPreOrder(root, &ret)
-	return ret
-}
-
-func helperPreOrder(root *TreeNode, data *[]int) {
-	if root == nil {
-		return
-	}
-	*data = append(*data, root.Val)
-	helperPreOrder(root.Left, data)
-	helperPreOrder(root.Right, data)
-}
-
 func postOrderTraversal(root *TreeNode) []int {
 	var ret []int
 	helperPostOrder(root, &ret)
