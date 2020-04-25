@@ -20,18 +20,3 @@ func helper(root *TreeNode, data *[]int) {
 	*data = append(*data, root.Val)
 	helper(root.Right, data)
 }
-
-func postOrderTraversal(root *TreeNode) []int {
-	var ret []int
-	helperPostOrder(root, &ret)
-	return ret
-}
-
-func helperPostOrder(root *TreeNode, data *[]int) {
-	if root == nil {
-		return
-	}
-	*data = append(*data, root.Val)
-	helperPostOrder(root.Left, data)
-	helperPostOrder(root.Right, data)
-}
