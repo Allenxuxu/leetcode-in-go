@@ -23,29 +23,40 @@ type ans struct {
 	one []int
 }
 
+var qs = []question{
+
+	question{
+		para{
+			[]int{1, 2, 3},
+			[]int{1, 3, 2},
+		},
+		ans{
+			[]int{1, 3, 2},
+		},
+	},
+
+	// 如需多个测试，可以复制上方元素。
+}
+
 func Test_Problem0094(t *testing.T) {
 	ast := assert.New(t)
-
-	qs := []question{
-
-		question{
-			para{
-				[]int{1, 2, 3},
-				[]int{1, 3, 2},
-			},
-			ans{
-				[]int{1, 3, 2},
-			},
-		},
-
-		// 如需多个测试，可以复制上方元素。
-	}
 
 	for _, q := range qs {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
 		ast.Equal(a.one, inorderTraversal(PreIn2Tree(p.pre, p.in)), "输入:%v", p)
+	}
+}
+
+func Test_Problem0094_2(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, inorderTraversal2(PreIn2Tree(p.pre, p.in)), "输入:%v", p)
 	}
 }
 

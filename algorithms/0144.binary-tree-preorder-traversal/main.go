@@ -46,3 +46,21 @@ func preorderTraversal1(root *TreeNode) []int {
 
 	return ret
 }
+
+func preorderTraversal2(root *TreeNode) []int {
+	var ret []int
+	s := stack.New()
+
+	for root != nil || s.Len() > 0 {
+		for root != nil {
+			s.Push(root)
+			ret = append(ret, root.Val)
+			root = root.Left
+		}
+
+		root = s.Pop().(*TreeNode)
+		root = root.Right
+	}
+
+	return ret
+}
