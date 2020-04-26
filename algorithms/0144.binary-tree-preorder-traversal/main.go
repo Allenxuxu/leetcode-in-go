@@ -1,5 +1,7 @@
 package algorithm
 
+import "github.com/Allenxuxu/toolkit/stack"
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -19,4 +21,28 @@ func helperPreOrder(root *TreeNode, data *[]int) {
 	*data = append(*data, root.Val)
 	helperPreOrder(root.Left, data)
 	helperPreOrder(root.Right, data)
+}
+
+func preorderTraversal1(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+
+	var ret []int
+	s := stack.New()
+	s.Push(root)
+
+	for s.Len() > 0 {
+		node := s.Pop().(*TreeNode)
+		ret = append(ret, node.Val)
+
+		if node.Right != nil {
+			s.Push(node.Right)
+		}
+		if node.Left != nil {
+			s.Push(node.Left)
+		}
+	}
+
+	return ret
 }
