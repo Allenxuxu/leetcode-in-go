@@ -1,6 +1,8 @@
 package algorithm
 
-import "github.com/Allenxuxu/toolkit/stack"
+import (
+	"github.com/Allenxuxu/toolkit/stack"
+)
 
 type TreeNode struct {
 	Val   int
