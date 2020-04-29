@@ -32,3 +32,14 @@ func Test_invertTree(t *testing.T) {
 		ast.Equal(tc.ans, Tree2Inorder(ans), "输入:%v", tc)
 	}
 }
+
+func Test_invertTree1(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		root := PreIn2Tree(tc.pre, tc.in)
+		ans := invertTree1(root)
+		ast.Equal(tc.ans, Tree2Inorder(ans), "输入:%v", tc)
+	}
+}
