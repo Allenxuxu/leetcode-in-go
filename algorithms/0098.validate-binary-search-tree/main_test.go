@@ -54,3 +54,13 @@ func Test_isValidBST(t *testing.T) {
 		ast.Equal(tc.ans, isValidBST(PreIn2Tree(tc.pre, tc.in)), "输入:%v", tc)
 	}
 }
+
+func Test_isValidBST1(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+
+		ast.Equal(tc.ans, isValidBST1(PreIn2Tree(tc.pre, tc.in)), "输入:%v", tc)
+	}
+}

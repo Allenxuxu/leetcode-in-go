@@ -29,3 +29,25 @@ func helper(root *TreeNode, min, max *int) bool {
 
 	return true
 }
+
+func isValidBST1(root *TreeNode) bool {
+	var ret []int
+	inorder(root, &ret)
+
+	for i := 1; i < len(ret); i++ {
+		if ret[i-1] >= ret[i] {
+			return false
+		}
+	}
+	return true
+}
+
+func inorder(root *TreeNode, ret *[]int) {
+	if root == nil {
+		return
+	}
+
+	inorder(root.Left, ret)
+	*ret = append(*ret, root.Val)
+	inorder(root.Right, ret)
+}
