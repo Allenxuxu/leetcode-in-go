@@ -33,3 +33,29 @@ func has(nums []int, target int) bool {
 
 	return false
 }
+
+func permute1(nums []int) [][]int {
+	var ret [][]int
+	used := make([]bool, len(nums))
+	backtrack1(nums, &[]int{}, &used, &ret)
+	return ret
+}
+
+func backtrack1(nums []int, current *[]int, used *[]bool, result *[][]int) {
+	if len(*current) == len(nums) {
+		tmp := make([]int, len(*current))
+		copy(tmp, *current)
+		*result = append(*result, tmp)
+		return
+	}
+
+	for i := 0; i < len(nums); i++ {
+		if !(*used)[i] {
+			*current = append(*current, nums[i])
+			(*used)[i] = true
+			backtrack1(nums, current, used, result)
+			(*used)[i] = false
+			*current = (*current)[:len(*current)-1]
+		}
+	}
+}
