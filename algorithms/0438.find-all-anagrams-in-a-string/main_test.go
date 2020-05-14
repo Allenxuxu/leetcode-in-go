@@ -43,3 +43,12 @@ func Test_findAnagrams(t *testing.T) {
 		ast.Equal(tc.ans, findAnagrams(tc.s, tc.p), "输入:%v", tc)
 	}
 }
+
+func Test_findAnagrams1(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, findAnagrams1(tc.s, tc.p), "输入:%v", tc)
+	}
+}
