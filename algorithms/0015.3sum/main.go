@@ -19,10 +19,10 @@ func threeSum(nums []int) [][]int {
 			ab := nums[i] + nums[j]
 			if -nums[k] == ab {
 				ret = append(ret, []int{nums[k], nums[i], nums[j]})
+				// 去重
 				for ; i < j && nums[i+1] == nums[i]; i++ {
 				}
 				for ; i < j && nums[j-1] == nums[j]; j-- {
-
 				}
 				i++
 				j--
@@ -33,6 +33,7 @@ func threeSum(nums []int) [][]int {
 			}
 		}
 
+		// 去重
 		for ; k < len(nums)-1 && nums[k+1] == nums[k]; k++ {
 		}
 	}

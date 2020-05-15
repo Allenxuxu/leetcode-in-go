@@ -7,12 +7,19 @@
 | 0007 | [整数反转](./algorithms/0007.reverse-integer/README.md) |
 | 0008 | [字符串转换整数 (atoi)](./algorithms/0008.string-to-integer-atoi/README.md) |
 
+## 双指针法
+
+| # | Title |
+|:---:|:---:|
+| 0011 | [盛最多水的容器](./algorithms/0011.container-with-most-water/README.md) |
 
 ## 数组、字符串、链表
 
 | # | Title |
 |:---:|:---:|
 | 0001 | [两数之和](./algorithms/0001.two-sum/README.md) |
+| 0015 | [三数之和](./algorithms/0015.3sum/README.md) |
+| 0014 | [最长公共前缀](./algorithms/0014.longest-common-prefix/README.md) |
 
 ## 树
 
