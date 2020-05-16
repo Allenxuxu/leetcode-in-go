@@ -26,3 +26,23 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 
 	return dummy.Next
 }
+
+func removeNthFromEnd1(head *ListNode, n int) *ListNode {
+	var dummy = new(ListNode)
+	dummy.Next = head
+	var left, right = dummy, dummy
+	for i := 0; i <= n; i++ {
+		right = right.Next
+	}
+
+	for right != nil {
+		left = left.Next
+		right = right.Next
+	}
+
+	tmp := left.Next
+	left.Next = left.Next.Next
+	tmp.Next = nil
+
+	return dummy.Next
+}

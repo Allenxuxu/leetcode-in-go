@@ -12,6 +12,19 @@
 | # | Title |
 |:---:|:---:|
 | 0011 | [盛最多水的容器](./algorithms/0011.container-with-most-water/README.md) |
+| 0019 | [删除链表的倒数第N个节点](./algorithms/0019.remove-nth-node-from-end-of-list/README.md) |
+
+## 栈
+
+| # | Title |
+|:---:|:---:|
+| 0020 | [有效的括号](./algorithms/0020.valid-parentheses/README.md) |
+
+## 回溯
+
+| # | Title |
+|:---:|:---:|
+| 0017 | [电话号码的字母组合](./algorithms/0017.letter-combinations-of-a-phone-number/README.md) |
 
 ## 数组、字符串、链表
 
