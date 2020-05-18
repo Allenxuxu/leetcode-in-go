@@ -25,6 +25,7 @@
 | # | Title |
 |:---:|:---:|
 | 0017 | [电话号码的字母组合](./algorithms/0017.letter-combinations-of-a-phone-number/README.md) |
+| 0022 | [括号生成](./algorithms/0022.generate-parentheses/README.md) |
 
 ## 数组、字符串、链表
 
@@ -33,6 +34,7 @@
 | 0001 | [两数之和](./algorithms/0001.two-sum/README.md) |
 | 0015 | [三数之和](./algorithms/0015.3sum/README.md) |
 | 0014 | [最长公共前缀](./algorithms/0014.longest-common-prefix/README.md) |
+| 0021 | [合并两个有序链表](./algorithms/0021.merge-two-sorted-lists/README.md) |
 
 ## 树
 
