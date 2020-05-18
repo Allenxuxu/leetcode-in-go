@@ -2,57 +2,49 @@ package algorithm
 
 import "container/list"
 
-type Node struct {
-	Key, Value int
+type LRUCache struct {
+	q    *list.List
+	data map[int]*list.Element
+	c    int
 }
 
-type LRUCache struct {
-	m    map[int]*list.Element
-	list *list.List
-	cap  int
+type KeyValue struct {
+	key   int
+	value int
 }
 
 func Constructor(capacity int) LRUCache {
-	return LRUCache{
-		m:    make(map[int]*list.Element, capacity),
-		list: list.New(),
-		cap:  capacity,
+	l := LRUCache{
+		q:    list.New(),
+		data: make(map[int]*list.Element),
+		c:    capacity,
 	}
+	return l
 }
 
-func (l *LRUCache) Get(key int) int {
-	v, ok := l.m[key]
-	if !ok {
+func (this *LRUCache) Get(key int) int {
+	e, ok := this.data[key]
+	if ok {
+		this.q.MoveToFront(e)
+		return e.Value.(*KeyValue).value
+	} else {
 		return -1
 	}
-
-	l.list.Remove(v)
-	node := v.Value.(*Node)
-	l.m[key] = l.list.PushFront(node)
-
-	return node.Value
 }
 
-func (l *LRUCache) Put(key int, value int) {
-	node := Node{
-		Key:   key,
-		Value: value,
-	}
-
-	v, ok := l.m[key]
+func (this *LRUCache) Put(key int, value int) {
+	e, ok := this.data[key]
 	if !ok {
-		e := l.list.PushFront(&node)
-		l.m[key] = e
-
-		if l.list.Len() > l.cap {
-			toDel := l.list.Back()
-			delete(l.m, toDel.Value.(*Node).Key)
-			l.list.Remove(toDel)
+		if this.q.Len() == this.c {
+			b := this.q.Back()
+			delete(this.data, b.Value.(*KeyValue).key)
+			this.q.Remove(b)
 		}
+		e = this.q.PushFront(&KeyValue{key: key, value: value})
+		this.data[key] = e
 	} else {
-		l.list.Remove(v)
-		e := l.list.PushFront(&node)
-		l.m[key] = e
+		e.Value.(*KeyValue).value = value
+		this.q.MoveToFront(e)
 	}
 }
 
