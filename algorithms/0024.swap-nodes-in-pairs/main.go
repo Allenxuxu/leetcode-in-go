@@ -7,24 +7,20 @@ type ListNode struct {
 
 func swapPairs(head *ListNode) *ListNode {
 	if head == nil {
-		return nil
+		return head
 	}
 
-	// 辅助结点指向 head
 	var dummy = new(ListNode)
 	dummy.Next = head
-	pre := dummy
-	for head != nil && head.Next != nil {
-		second := head.Next
-
+	pre, first, second := dummy, head, head.Next
+	for first != nil && second != nil {
 		pre.Next = second
-		head.Next = second.Next
-		second.Next = head
-
-		pre = head
-		head = head.Next
+		second.Next, first.Next = first, second.Next
+		pre, first = pre.Next.Next, pre.Next.Next.Next
+		if first != nil {
+			second = first.Next
+		}
 	}
-
 	return dummy.Next
 }
 
@@ -33,12 +29,11 @@ func swapPairs1(head *ListNode) *ListNode {
 		return head
 	}
 
-	f := head
-	s := head.Next
-	f.Next = swapPairs1(s.Next)
-	s.Next = f
+	next := head.Next
+	head.Next = swapPairs1(next.Next)
+	next.Next = head
 
-	return s
+	return next
 }
 
 func swapPairs2(head *ListNode) *ListNode {
