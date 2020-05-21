@@ -31,24 +31,26 @@ func (q *stack) Len() int {
 	return q.list.Len()
 }
 
+// 最小栈解法
+// 按行计算雨水量
 func trap(height []int) int {
 	if len(height) <= 2 {
 		return 0
 	}
 
-	q := New()
+	s := New()
 	var ret int
 	for i := 0; i < len(height); i++ {
-		for q.Len() > 0 && height[i] > height[q.Peek()] {
-			minH := height[q.Pop()]
-			if q.Len() == 0 {
+		for s.Len() > 0 && height[i] > height[s.Peek()] {
+			minH := height[s.Pop()]
+			if s.Len() == 0 {
 				break
 			}
-			left, right := q.Peek(), i
+			left, right := s.Peek(), i
 			ret += (right - left - 1) * (min(height[left], height[right]) - minH)
 		}
 
-		q.Push(i)
+		s.Push(i)
 	}
 
 	return ret
@@ -61,6 +63,8 @@ func min(a, b int) int {
 	return b
 }
 
+// 双指针左右
+// 按列累计雨水量
 func trap1(height []int) int {
 	if len(height) <= 2 {
 		return 0

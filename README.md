@@ -20,6 +20,12 @@
 |:---:|:---:|
 | 0020 | [有效的括号](./algorithms/0020.valid-parentheses/README.md) |
 
+## 最小栈、最小队列
+
+| # | Title |
+|:---:|:---:|
+| 0042 | [接雨水](./algorithms/0042.trapping-rain-water/README.md) |
+
 ## 回溯
 
 | # | Title |
@@ -36,6 +42,8 @@
 | 0014 | [最长公共前缀](./algorithms/0014.longest-common-prefix/README.md) |
 | 0026 | [删除排序数组中的重复项](./algorithms/0026.remove-duplicates-from-sorted-array/README.md) |
 | 0028 | [实现 strStr()](./algorithms/0028.implement-strstr/README.md) |
+| 0036 | [有效的数独](./algorithms/0036.valid-sudoku/README.md) |
+| 0038 | [外观数列](./algorithms/0038.count-and-say/README.md) |
 
 ## 链表
 

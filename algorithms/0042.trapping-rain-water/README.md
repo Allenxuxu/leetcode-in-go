@@ -1,3 +1,3 @@
-# 接雨水
+# 接雨水 `hard`
 
 https://leetcode-cn.com/problems/trapping-rain-water/
