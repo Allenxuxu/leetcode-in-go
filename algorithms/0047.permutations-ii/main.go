@@ -3,6 +3,7 @@ package algorithm
 import "sort"
 
 func permuteUnique(nums []int) [][]int {
+	// 排序让重复的数字相邻
 	sort.Ints(nums)
 
 	var ret [][]int
@@ -20,6 +21,8 @@ func backtrack(nums []int, current *[]int, used *[]bool, result *[][]int) {
 	}
 
 	for i := 0; i < len(nums); i++ {
+		// 剪枝条件：i > 0 是为了保证 nums[i - 1] 有意义
+		// 写 !used[i - 1] 是因为 nums[i - 1] 在深度优先遍历的过程中刚刚被撤销选择
 		if i != 0 && nums[i-1] == nums[i] && !(*used)[i-1] {
 			continue
 		}

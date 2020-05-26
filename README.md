@@ -32,6 +32,8 @@
 |:---:|:---:|
 | 0017 | [电话号码的字母组合](./algorithms/0017.letter-combinations-of-a-phone-number/README.md) |
 | 0022 | [括号生成](./algorithms/0022.generate-parentheses/README.md) |
+| 0046 | [全排列](./algorithms/0046.permutations/README.md) |
+| 0047 | [全排列 II](./algorithms/0047.permutations-ii/README.md) |
 
 ## 数组、字符串
 
