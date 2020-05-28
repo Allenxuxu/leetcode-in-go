@@ -1,11 +1,12 @@
 # leetcode-in-go
 
-## 数值转换
+## 数值转换/计算
 
 | # | Title |
 |:---:|:---:|
 | 0007 | [整数反转](./algorithms/0007.reverse-integer/README.md) |
 | 0008 | [字符串转换整数 (atoi)](./algorithms/0008.string-to-integer-atoi/README.md) |
+| 0050 | [pow(x, n)](./algorithms/0050.powx-n/README.md) |
 
 ## 双指针法
 
@@ -26,7 +27,7 @@
 |:---:|:---:|
 | 0042 | [接雨水](./algorithms/0042.trapping-rain-water/README.md) |
 
-## 回溯
+## 回溯/递归
 
 | # | Title |
 |:---:|:---:|
@@ -34,6 +35,7 @@
 | 0022 | [括号生成](./algorithms/0022.generate-parentheses/README.md) |
 | 0046 | [全排列](./algorithms/0046.permutations/README.md) |
 | 0047 | [全排列 II](./algorithms/0047.permutations-ii/README.md) |
+| 0051 | [n皇后](./algorithms/0051.n-queens/README.md) |
 
 ## 数组、字符串
 
@@ -46,6 +48,8 @@
 | 0028 | [实现 strStr()](./algorithms/0028.implement-strstr/README.md) |
 | 0036 | [有效的数独](./algorithms/0036.valid-sudoku/README.md) |
 | 0038 | [外观数列](./algorithms/0038.count-and-say/README.md) |
+| 0048 | [旋转图像](./algorithms/0048.rotate-image/README.md) |
+| 0049 | [字母异位词分组](./algorithms/0049.group-anagrams/README.md) |
 
 ## 链表
 

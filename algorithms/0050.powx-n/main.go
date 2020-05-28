@@ -1,5 +1,6 @@
 package algorithm
 
+// x^4 = x^2 * x^2
 func myPow(x float64, n int) float64 {
 	var ret float64
 	var flag = 1
