@@ -7,6 +7,7 @@
 | 0007 | [整数反转](./algorithms/0007.reverse-integer/README.md) |
 | 0008 | [字符串转换整数 (atoi)](./algorithms/0008.string-to-integer-atoi/README.md) |
 | 0050 | [pow(x, n)](./algorithms/0050.powx-n/README.md) |
+| 0066 | [加一](./algorithms/0066.plus-one/README.md) |
 
 ## 双指针法
 
