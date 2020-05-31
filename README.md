@@ -37,6 +37,8 @@
 | 0046 | [全排列](./algorithms/0046.permutations/README.md) |
 | 0047 | [全排列 II](./algorithms/0047.permutations-ii/README.md) |
 | 0051 | [n皇后](./algorithms/0051.n-queens/README.md) |
+| 0077 | [组合](./algorithms/0077.combinations/README.md) |
+| 0078 | [子集](./algorithms/0078.subsets/README.md) |
 
 ## 数组、字符串
 
