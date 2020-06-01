@@ -22,11 +22,12 @@
 |:---:|:---:|
 | 0020 | [有效的括号](./algorithms/0020.valid-parentheses/README.md) |
 
-## 最小栈、最小队列
+## 单调栈、单调队列
 
 | # | Title |
 |:---:|:---:|
 | 0042 | [接雨水](./algorithms/0042.trapping-rain-water/README.md) |
+| 0084 | [柱状图中最大的矩形](./algorithms/0084.largest-rectangle-in-histogram/README.md) |
 
 ## 回溯/递归
 
