@@ -54,6 +54,7 @@
 | 0038 | [外观数列](./algorithms/0038.count-and-say/README.md) |
 | 0048 | [旋转图像](./algorithms/0048.rotate-image/README.md) |
 | 0049 | [字母异位词分组](./algorithms/0049.group-anagrams/README.md) |
+| 0088 | [合并两个有序数组](./algorithms/0088.merge-sorted-array/README.md) |
 
 ## 链表
 
