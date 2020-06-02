@@ -47,13 +47,14 @@ func levelOrder(root *TreeNode) [][]int {
 		tmp := make([]int, 0, size)
 		for i := 0; i < size; i++ {
 			node := q.Pop()
+			tmp = append(tmp, node.Val)
+
 			if node.Left != nil {
 				q.Push(node.Left)
 			}
 			if node.Right != nil {
 				q.Push(node.Right)
 			}
-			tmp = append(tmp, node.Val)
 		}
 		ret = append(ret, tmp)
 	}
