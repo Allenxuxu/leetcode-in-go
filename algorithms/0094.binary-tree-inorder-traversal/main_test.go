@@ -60,6 +60,17 @@ func Test_Problem0094_2(t *testing.T) {
 	}
 }
 
+func Test_Problem0094_3(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, q := range qs {
+		a, p := q.ans, q.para
+		fmt.Printf("~~%v~~\n", p)
+
+		ast.Equal(a.one, inorderTraversal3(PreIn2Tree(p.pre, p.in)), "输入:%v", p)
+	}
+}
+
 // PreIn2Tree 把 preorder 和 inorder 切片转换成 二叉树
 func PreIn2Tree(pre, in []int) *TreeNode {
 	if len(pre) != len(in) {

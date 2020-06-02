@@ -59,3 +59,14 @@ func Test_preorderTraversal2(t *testing.T) {
 		ast.Equal(tc.pre, preorderTraversal2(root), "输入:%v", tc)
 	}
 }
+
+func Test_preorderTraversal3(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+
+		root := InPost2Tree(tc.in, tc.post)
+		ast.Equal(tc.pre, preorderTraversal3(root), "输入:%v", tc)
+	}
+}

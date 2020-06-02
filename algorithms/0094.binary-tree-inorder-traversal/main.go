@@ -41,3 +41,36 @@ func inorderTraversal2(root *TreeNode) []int {
 
 	return ret
 }
+
+// 推荐模版
+func inorderTraversal3(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+
+	var ret []int
+	s := stack.New()
+	s.Push(root)
+
+	for s.Len() > 0 {
+		c := s.Pop()
+
+		if c != nil {
+			node := c.(*TreeNode)
+
+			if node.Right != nil {
+				s.Push(node.Right) //右节点先压栈，最后处理
+			}
+			s.Push(node)
+			s.Push(nil)
+			if node.Left != nil {
+				s.Push(node.Left)
+			}
+		} else {
+			node := s.Pop().(*TreeNode)
+			ret = append(ret, node.Val)
+		}
+	}
+
+	return ret
+}

@@ -59,3 +59,14 @@ func Test_postorderTraversal2(t *testing.T) {
 		ast.Equal(tc.post, postorderTraversal2(root), "输入:%v", tc)
 	}
 }
+
+func Test_postorderTraversal3(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+
+		root := PreIn2Tree(tc.pre, tc.in)
+		ast.Equal(tc.post, postorderTraversal3(root), "输入:%v", tc)
+	}
+}

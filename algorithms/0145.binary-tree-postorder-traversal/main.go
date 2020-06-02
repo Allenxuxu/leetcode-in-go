@@ -82,3 +82,37 @@ func postorderTraversal2(root *TreeNode) []int {
 	}
 	return ret
 }
+
+// 推荐模版
+func postorderTraversal3(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
+
+	var ret []int
+	s := stack.New()
+	s.Push(root)
+
+	for s.Len() > 0 {
+		c := s.Pop()
+
+		if c != nil {
+			node := c.(*TreeNode)
+
+			s.Push(node)
+			s.Push(nil)
+
+			if node.Right != nil {
+				s.Push(node.Right)
+			}
+			if node.Left != nil {
+				s.Push(node.Left)
+			}
+		} else {
+			node := s.Pop().(*TreeNode)
+			ret = append(ret, node.Val)
+		}
+	}
+
+	return ret
+}
