@@ -64,6 +64,9 @@
 | 0206 | [反转链表](./algorithms/0206.reverse-linked-list/README.md) |
 | 0024 | [两两交换链表中的节点](./algorithms/0024.swap-nodes-in-pairs/README.md) |
 | 0025 | [K 个一组翻转链表](./algorithms/0025.reverse-nodes-in-k-group/README.md) |
+| 0144 | [二叉树的前序遍历](./algorithms/0144.binary-tree-preorder-traversal/README.md) |
+| 0094 | [二叉树的中序遍历](./algorithms/0094.binary-tree-inorder-traversal/README.md) |
+| 0145 | [二叉树的后序遍历](./algorithms/0145.binary-tree-postorder-traversal/README.md) |
 
 ## 树
 
