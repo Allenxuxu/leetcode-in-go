@@ -74,6 +74,7 @@
 | 0145 | [二叉树的后序遍历](./algorithms/0145.binary-tree-postorder-traversal/README.md) |
 | 0102 | [二叉树的层序遍历](./algorithms/0102.binary-tree-level-order-traversal/README.md) |
 | 0098 | [验证二叉搜索树](./algorithms/0098.validate-binary-search-tree/README.md) |
+| 0101 | [对称二叉树](./algorithms/0101.symmetric-tree/README.md) |
 
 ## 滑动窗口
 
