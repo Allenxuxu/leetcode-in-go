@@ -75,6 +75,7 @@
 | 0102 | [二叉树的层序遍历](./algorithms/0102.binary-tree-level-order-traversal/README.md) |
 | 0098 | [验证二叉搜索树](./algorithms/0098.validate-binary-search-tree/README.md) |
 | 0101 | [对称二叉树](./algorithms/0101.symmetric-tree/README.md) |
+| 0104 | [二叉树的最大深度](./algorithms/0104.maximum-depth-of-binary-tree/README.md) |
 
 ## 滑动窗口
 

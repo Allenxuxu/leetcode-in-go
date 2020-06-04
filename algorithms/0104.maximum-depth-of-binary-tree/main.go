@@ -68,3 +68,28 @@ func maxDepth1(root *TreeNode) int {
 
 	return ret
 }
+
+func maxDepth2(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	var ret int
+	q := queue.New()
+	q.Push(root)
+
+	for q.Len() > 0 {
+		size := q.Len()
+		for i := 0; i < size; i++ {
+			node := q.Pop().(*TreeNode)
+			if node.Left != nil {
+				q.Push(node.Left)
+			}
+			if node.Right != nil {
+				q.Push(node.Right)
+			}
+		}
+		ret++
+	}
+	return ret
+}
