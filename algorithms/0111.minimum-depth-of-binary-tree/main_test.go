@@ -69,3 +69,12 @@ func Test_minDepth1(t *testing.T) {
 		ast.Equal(tc.ans, minDepth1(PreIn2Tree(tc.pre, tc.in)), "输入:%v", tc)
 	}
 }
+
+func Test_minDepth2(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("~~%v~~\n", tc)
+		ast.Equal(tc.ans, minDepth2(PreIn2Tree(tc.pre, tc.in)), "输入:%v", tc)
+	}
+}

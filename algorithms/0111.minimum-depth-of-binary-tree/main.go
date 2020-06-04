@@ -11,16 +11,18 @@ type TreeNode struct {
 }
 
 func minDepth(root *TreeNode) int {
-	switch {
-	case root == nil:
+	if root == nil {
 		return 0
-	case root.Left == nil:
-		return 1 + minDepth(root.Right)
-	case root.Right == nil:
-		return 1 + minDepth(root.Left)
-	default:
-		return 1 + min(minDepth(root.Left), minDepth(root.Right))
 	}
+
+	if root.Left == nil {
+		return 1 + minDepth(root.Right)
+	}
+	if root.Right == nil {
+		return 1 + minDepth(root.Left)
+	}
+
+	return 1 + min(minDepth(root.Left), minDepth(root.Right))
 }
 
 func min(a, b int) int {
@@ -66,5 +68,35 @@ func minDepth1(root *TreeNode) int {
 		}
 	}
 
+	return ret
+}
+
+func minDepth2(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+
+	var ret int
+	q := queue.New()
+	q.Push(root)
+
+	for q.Len() > 0 {
+		size := q.Len()
+		for i := 0; i < size; i++ {
+			node := q.Pop().(*TreeNode)
+
+			if node.Left == nil && node.Right == nil {
+				return ret + 1
+			}
+			if node.Left != nil {
+				q.Push(node.Left)
+			}
+			if node.Right != nil {
+				q.Push(node.Right)
+			}
+		}
+
+		ret++
+	}
 	return ret
 }
