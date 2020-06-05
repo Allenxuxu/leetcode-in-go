@@ -15,6 +15,7 @@
 |:---:|:---:|
 | 0011 | [盛最多水的容器](./algorithms/0011.container-with-most-water/README.md) |
 | 0019 | [删除链表的倒数第N个节点](./algorithms/0019.remove-nth-node-from-end-of-list/README.md) |
+| 0125 | [验证回文字符串](./algorithms/0125.valid-palindrome/README.md) |
 
 ## 栈
 
