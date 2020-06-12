@@ -19,34 +19,40 @@ func Test_Problem0126(t *testing.T) {
 	}{
 
 		{
-			"",
-			"",
-			[]string{},
-			nil,
+			"a",
+			"c",
+			[]string{"a", "b", "c"},
+			[][]string{{"a", "c"}},
 		},
+
+		{
+			"hot",
+			"dog",
+			[]string{"hot", "dog", "dot"},
+			[][]string{
+				[]string{"hot", "dot", "dog"},
+			},
+		},
+
+		{
+			"hit",
+			"cog",
+			[]string{"hot", "dot", "dog", "lot", "log", "cog"},
+			[][]string{
+				[]string{"hit", "hot", "dot", "dog", "cog"},
+				[]string{"hit", "hot", "lot", "log", "cog"},
+			},
+		},
+
+		// TODO
 		//{
-		//	"hit",
-		//	"cog",
-		//	[]string{"hot", "dot", "dog", "lot", "log"},
-		//	[][]string{},
-		//},
-		//
-		//{
-		//	"hot",
-		//	"dog",
-		//	[]string{"hot", "dog", "dot"},
+		//	"red",
+		//	"tax",
+		//	[]string{"ted", "tex", "red", "tax", "tad", "den", "rex", "pee"},
 		//	[][]string{
-		//		[]string{"hot", "dot", "dog"},
-		//	},
-		//},
-		//
-		//{
-		//	"hit",
-		//	"cog",
-		//	[]string{"hot", "dot", "dog", "lot", "log", "cog"},
-		//	[][]string{
-		//		[]string{"hit", "hot", "dot", "dog", "cog"},
-		//		[]string{"hit", "hot", "lot", "log", "cog"},
+		//		[]string{"red", "ted", "tad", "tax"},
+		//		[]string{"red", "ted", "tex", "tax"},
+		//		[]string{"red", "rex", "tex", "tax"},
 		//	},
 		//},
 

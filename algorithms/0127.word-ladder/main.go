@@ -35,46 +35,40 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 		m[wordList[i]] = true
 	}
 
-	delete(m, beginWord)
+	m[beginWord] = false
 
 	q := New(len(wordList))
 	q.Push(beginWord)
-	index := 1
+	count := 1
 	for q.Len() > 0 {
 		size := q.Len()
+
 		for i := 0; i < size; i++ {
-			word := q.Pop()
-			if trans(m, endWord, q, []byte(word)) {
-				return index + 1
-			}
-		}
-		index++
-	}
-	return 0
-}
+			word := []byte(q.Pop())
+			for i := 0; i < len(word); i++ {
+				tmp := word[i]
 
-func trans(m map[string]bool, endWord string, q *queue, word []byte) bool {
-	for i := 0; i < len(word); i++ {
-		tmp := word[i]
+				for j := 0; j < 26; j++ {
+					b := byte('a' + j)
+					if b == word[i] {
+						continue
+					}
+					word[i] = b
+					if m[string(word)] {
+						if string(word) == endWord {
+							return count + 1
+						}
 
-		for j := 0; j < 26; j++ {
-			b := byte('a' + j)
-			if b == word[i] {
-				continue
-			}
+						q.Push(string(word))
 
-			word[i] = b
-
-			if m[string(word)] {
-				if string(word) == endWord {
-					return true
+						m[string(word)] = false
+					}
 				}
-
-				q.Push(string(word))
-				delete(m, string(word))
+				word[i] = tmp
 			}
 		}
-		word[i] = tmp
+		count++
 	}
-	return false
+
+	return 0
 }
