@@ -52,7 +52,7 @@ func singleNumber1(nums []int) int {
 	return -1
 }
 
-// 异或操作 相同为 1 ，相异为 0
+// 异或操作 相同为 0 ，相异为 1
 // 时间复杂度 O(n)
 // 空间复杂度 O(1)
 func singleNumber2(nums []int) int {

@@ -8,6 +8,7 @@
 | 0008 | [字符串转换整数 (atoi)](./algorithms/0008.string-to-integer-atoi/README.md) |
 | 0050 | [pow(x, n)](./algorithms/0050.powx-n/README.md) |
 | 0066 | [加一](./algorithms/0066.plus-one/README.md) |
+| 0136 | [只出现一次的数字](./algorithms/0136.single-number/README.md) |
 
 ## 双指针法
 
@@ -16,6 +17,7 @@
 | 0011 | [盛最多水的容器](./algorithms/0011.container-with-most-water/README.md) |
 | 0019 | [删除链表的倒数第N个节点](./algorithms/0019.remove-nth-node-from-end-of-list/README.md) |
 | 0125 | [验证回文字符串](./algorithms/0125.valid-palindrome/README.md) |
+| 0141 | [环形链表](./algorithms/0141.linked-list-cycle/README.md) |
 
 ## 栈
 
