@@ -22,29 +22,34 @@ func Constructor(capacity int) LRUCache {
 	return l
 }
 
-func (this *LRUCache) Get(key int) int {
-	e, ok := this.data[key]
+func (c *LRUCache) Get(key int) int {
+	e, ok := c.data[key]
 	if ok {
-		this.q.MoveToFront(e)
+		// 将节点移动到头部，并且删除
+		c.q.MoveToFront(e)
 		return e.Value.(*KeyValue).value
 	} else {
 		return -1
 	}
 }
 
-func (this *LRUCache) Put(key int, value int) {
-	e, ok := this.data[key]
+func (c *LRUCache) Put(key int, value int) {
+	e, ok := c.data[key]
 	if !ok {
-		if this.q.Len() == this.c {
-			b := this.q.Back()
-			delete(this.data, b.Value.(*KeyValue).key)
-			this.q.Remove(b)
+		// cache 满了，删除最后一个（最长时间没有使用）
+		if c.q.Len() == c.c {
+			b := c.q.Back()
+			delete(c.data, b.Value.(*KeyValue).key)
+			c.q.Remove(b)
 		}
-		e = this.q.PushFront(&KeyValue{key: key, value: value})
-		this.data[key] = e
+		// 插入新节点到头部
+		e = c.q.PushFront(&KeyValue{key: key, value: value})
+		c.data[key] = e
 	} else {
+		// 设置节点值
 		e.Value.(*KeyValue).value = value
-		this.q.MoveToFront(e)
+		// 将节点移动到头部
+		c.q.MoveToFront(e)
 	}
 }
 

@@ -97,3 +97,9 @@
 |:---:|:---:|
 | 0070 | [爬楼梯](./algorithms/0070.climbing-stairs/README.md) |
 | 0122 | [买卖股票的最佳时机II](./algorithms/0122.best-time-to-buy-and-sell-stock/README.md) |
+
+## 其他
+
+| # | Title |
+|:---:|:---:|
+| 0146 | [LRU 缓存机制](./algorithms/0146.lru-cache/README.md) |
