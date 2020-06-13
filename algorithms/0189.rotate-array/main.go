@@ -44,3 +44,25 @@ func reverse(nums []int, i, j int) {
 		j--
 	}
 }
+
+func rotate3(nums []int, k int) {
+	k = k % len(nums)
+
+	var count int
+	for j := 0; count < len(nums); j++ {
+		var i, pre = j, nums[j]
+		for {
+			next := (i + k) % len(nums)
+			tmp := nums[next]
+			nums[next] = pre
+
+			i = next
+			pre = tmp
+
+			count++
+			if j == i {
+				break
+			}
+		}
+	}
+}

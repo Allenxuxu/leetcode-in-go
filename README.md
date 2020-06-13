@@ -9,6 +9,7 @@
 | 0050 | [pow(x, n)](./algorithms/0050.powx-n/README.md) |
 | 0066 | [加一](./algorithms/0066.plus-one/README.md) |
 | 0136 | [只出现一次的数字](./algorithms/0136.single-number/README.md) |
+| 0169 | [多数元素](./algorithms/0169.majority-element/README.md) |
 
 ## 双指针法
 
@@ -59,6 +60,7 @@
 | 0048 | [旋转图像](./algorithms/0048.rotate-image/README.md) |
 | 0049 | [字母异位词分组](./algorithms/0049.group-anagrams/README.md) |
 | 0088 | [合并两个有序数组](./algorithms/0088.merge-sorted-array/README.md) |
+| 0189 | [旋转数组](./algorithms/0189.rotate-array/README.md) |
 
 ## 链表
 
@@ -103,3 +105,4 @@
 | # | Title |
 |:---:|:---:|
 | 0146 | [LRU 缓存机制](./algorithms/0146.lru-cache/README.md) |
+| 0155 | [最小栈](./algorithms/0155.min-stack/README.md) |
