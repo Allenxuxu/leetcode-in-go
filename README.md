@@ -10,6 +10,8 @@
 | 0066 | [加一](./algorithms/0066.plus-one/README.md) |
 | 0136 | [只出现一次的数字](./algorithms/0136.single-number/README.md) |
 | 0169 | [多数元素](./algorithms/0169.majority-element/README.md) |
+| 0217 | [存在重复元素](./algorithms/0217.contains-duplicate/README.md) |
+| 0219 | [存在重复元素 II](./algorithms/0219.contains-duplicate-ii/README.md) |
 
 ## 双指针法
 
