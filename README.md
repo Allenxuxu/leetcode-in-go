@@ -73,6 +73,8 @@
 | 0206 | [反转链表](./algorithms/0206.reverse-linked-list/README.md) |
 | 0024 | [两两交换链表中的节点](./algorithms/0024.swap-nodes-in-pairs/README.md) |
 | 0025 | [K 个一组翻转链表](./algorithms/0025.reverse-nodes-in-k-group/README.md) |
+| 0234 | [回文链表](./algorithms/0234.palindrome-linked-list/README.md) |
+| 0237 | [删除链表中的节点](./algorithms/0237.delete-node-in-a-linked-list/README.md) |
 
 ## 树
 
@@ -86,6 +88,7 @@
 | 0101 | [对称二叉树](./algorithms/0101.symmetric-tree/README.md) |
 | 0104 | [二叉树的最大深度](./algorithms/0104.maximum-depth-of-binary-tree/README.md) |
 | 0111 | [二叉树的最小深度](./algorithms/0111.minimum-depth-of-binary-tree/README.md) |
+| 0226 | [翻转二叉树](./algorithms/0226.invert-binary-tree/README.md) |
 
 ## 滑动窗口
 
