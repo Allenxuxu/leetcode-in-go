@@ -34,6 +34,7 @@
 |:---:|:---:|
 | 0042 | [接雨水](./algorithms/0042.trapping-rain-water/README.md) |
 | 0084 | [柱状图中最大的矩形](./algorithms/0084.largest-rectangle-in-histogram/README.md) |
+| 0239 | [滑动窗口最大值](./algorithms/0239.sliding-window-maximum/README.md) |
 
 ## 回溯/递归
 
@@ -64,6 +65,11 @@
 | 0049 | [字母异位词分组](./algorithms/0049.group-anagrams/README.md) |
 | 0088 | [合并两个有序数组](./algorithms/0088.merge-sorted-array/README.md) |
 | 0189 | [旋转数组](./algorithms/0189.rotate-array/README.md) |
+| 0242 | [有效的字母异位词](./algorithms/0242.valid-anagram/README.md) |
+| 0283 | [移动零](./algorithms/0283.move-zeroes/README.md) |
+| 0344 | [反转字符串](./algorithms/0344.reverse-string/README.md) |
+| 0350 | [两个数组的交集II](./algorithms/0350.intersection-of-two-arrays-ii/README.md) |
+| 0387 | [字符串中的第一个唯一字符](./algorithms/0387.first-unique-character-in-a-string/README.md) |
 
 ## 链表
 
@@ -98,6 +104,8 @@
 | 0567 | [字符串的排列](./algorithms/0567.permutation-in-string/README.md) |
 | 0438 | [找到字符串中所有字母异位词](./algorithms/0438.find-all-anagrams-in-a-string/README.md) |
 | 0003 | [无重复字符的最长子串](./algorithms/0003.longest-substring-without-repeating-characters/README.md) |
+| 0438 | [找到字符串中所有字母异位词](./algorithms/0438.find-all-anagrams-in-a-string/README.md) |
+| 0567 | [字符串的排列](./algorithms/0567.permutation-in-string/README.md) |
 
 ## 动态规划 TODO
 
@@ -112,3 +120,4 @@
 |:---:|:---:|
 | 0146 | [LRU 缓存机制](./algorithms/0146.lru-cache/README.md) |
 | 0155 | [最小栈](./algorithms/0155.min-stack/README.md) |
+| 0641 | [设计循环双端队列](./algorithms/0641.design-circular-deque/README.md) |

@@ -10,6 +10,7 @@ func isAnagram(s string, t string) bool {
 		return false
 	}
 
+	// 可以用数组优化 ，因为只有26个英文字母
 	m := make(map[uint8]int)
 	for i := 0; i < len(s); i++ {
 		m[s[i]]++
