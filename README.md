@@ -114,6 +114,13 @@
 | 0070 | [爬楼梯](./algorithms/0070.climbing-stairs/README.md) |
 | 0122 | [买卖股票的最佳时机II](./algorithms/0122.best-time-to-buy-and-sell-stock/README.md) |
 
+## 二分法
+
+| # | Title |
+|:---:|:---:|
+| 0069 | [x的平方根](./algorithms/0069.sqrtx/README.md) |
+
+
 ## 其他
 
 | # | Title |
