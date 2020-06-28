@@ -95,6 +95,7 @@
 | 0104 | [二叉树的最大深度](./algorithms/0104.maximum-depth-of-binary-tree/README.md) |
 | 0111 | [二叉树的最小深度](./algorithms/0111.minimum-depth-of-binary-tree/README.md) |
 | 0226 | [翻转二叉树](./algorithms/0226.invert-binary-tree/README.md) |
+| 0199 | [二叉树的右视图](./algorithms/0199.binary-tree-right-side-view/README.md) |
 
 ## 滑动窗口
 
@@ -119,6 +120,7 @@
 | # | Title |
 |:---:|:---:|
 | 0069 | [x的平方根](./algorithms/0069.sqrtx/README.md) |
+| 0034 | [在排序数组中查找元素的第一个和最后一个位置](./algorithms/0034.search-for-a-range/README.md) |
 
 
 ## 其他
