@@ -117,6 +117,7 @@
 | 0322 | [零钱兑换](./algorithms/0322.coin-change/README.md) |
 | 0509 | [斐波那契数](./algorithms/0509.fibonacci-number/README.md) |
 | 0053 | [最大子序和](./algorithms/0053.maximum-subarray/README.md) |
+| 0300 | [最长上升子序列](./algorithms/0300.longest-increasing-subsequence/README.md) |
 
 ## 二分法
 
