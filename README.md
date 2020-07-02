@@ -119,6 +119,7 @@
 | 0509 | [斐波那契数](./algorithms/0509.fibonacci-number/README.md) |
 | 0053 | [最大子序和](./algorithms/0053.maximum-subarray/README.md) |
 | 0300 | [最长上升子序列](./algorithms/0300.longest-increasing-subsequence/README.md) |
+| 1143 | [最长公共子序列](./algorithms/1143.longest-common-subsequence/README.md) |
 
 ## 二分法
 
