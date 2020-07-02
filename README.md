@@ -112,6 +112,7 @@
 
 | # | Title |
 |:---:|:---:|
+| 0064 | [最小路径和](./algorithms/0064.minimum-path-sum/README.md) |
 | 0070 | [爬楼梯](./algorithms/0070.climbing-stairs/README.md) |
 | 0122 | [买卖股票的最佳时机II](./algorithms/0122.best-time-to-buy-and-sell-stock/README.md) |
 | 0322 | [零钱兑换](./algorithms/0322.coin-change/README.md) |
