@@ -112,6 +112,8 @@
 
 | # | Title |
 |:---:|:---:|
+| 0055 | [跳跃游戏](./algorithms/0055.jump-game/README.md) |
+| 0045 | [跳跃游戏II](./algorithms/0045.jump-game-ii/README.md) |
 | 0062 | [不同路径](./algorithms/0062.unique-paths/README.md) |
 | 0063 | [不同路径II](./algorithms/0063.unique-paths-ii/README.md) |
 | 0064 | [最小路径和](./algorithms/0064.minimum-path-sum/README.md) |
