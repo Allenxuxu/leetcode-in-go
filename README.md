@@ -49,6 +49,7 @@
 | 0078 | [子集](./algorithms/0078.subsets/README.md) |
 | 0127 | [单词接龙](./algorithms/0127.word-ladder/README.md) |
 | 0200 | [岛屿数量](./algorithms/0200.number-of-islands/README.md) |
+| 0131 | [分割回文串](./algorithms/0131.palindrome-partitioning/README.md) |
 
 ## 数组、字符串
 
@@ -108,7 +109,7 @@
 | 0438 | [找到字符串中所有字母异位词](./algorithms/0438.find-all-anagrams-in-a-string/README.md) |
 | 0567 | [字符串的排列](./algorithms/0567.permutation-in-string/README.md) |
 
-## 动态规划 TODO
+## 动态规划
 
 | # | Title |
 |:---:|:---:|
@@ -125,6 +126,7 @@
 | 0053 | [最大子序和](./algorithms/0053.maximum-subarray/README.md) |
 | 0300 | [最长上升子序列](./algorithms/0300.longest-increasing-subsequence/README.md) |
 | 1143 | [最长公共子序列](./algorithms/1143.longest-common-subsequence/README.md) |
+| 0132 | [分割回文串 II](./algorithms/0132.palindrome-partitioning-ii/README.md) |
 
 ## 二分法
 
