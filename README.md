@@ -127,6 +127,7 @@
 | 0300 | [最长上升子序列](./algorithms/0300.longest-increasing-subsequence/README.md) |
 | 1143 | [最长公共子序列](./algorithms/1143.longest-common-subsequence/README.md) |
 | 0132 | [分割回文串 II](./algorithms/0132.palindrome-partitioning-ii/README.md) |
+| 0005 | [最长回文子串](./algorithms/0005.longest-palindromic-substring/README.md) |
 
 ## 二分法
 
