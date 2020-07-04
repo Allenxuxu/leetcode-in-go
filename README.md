@@ -130,6 +130,7 @@
 | 0132 | [分割回文串 II](./algorithms/0132.palindrome-partitioning-ii/README.md) |
 | 0005 | [最长回文子串](./algorithms/0005.longest-palindromic-substring/README.md) |
 | 0139 | [单词拆分](./algorithms/0139.word-break/README.md) |
+| 0198 | [打家劫舍](./algorithms/0198.house-robber/README.md) |
 
 ## 二分法
 
