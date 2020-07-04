@@ -132,6 +132,7 @@
 | 0139 | [单词拆分](./algorithms/0139.word-break/README.md) |
 | 0198 | [打家劫舍](./algorithms/0198.house-robber/README.md) |
 | 0213 | [打家劫舍II](./algorithms/0213.house-robber-ii/README.md) |
+| 0337 | [打家劫舍III](./algorithms/0337.house-robber-iii/README.md) |
 
 ## 二分法
 
