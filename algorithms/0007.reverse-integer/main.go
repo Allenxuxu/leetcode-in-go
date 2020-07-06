@@ -21,8 +21,7 @@ func reverse(x int) int {
 		temp := x % 10
 		if res > math.MaxInt32/10 || (res == math.MaxInt32/10 && temp > 7) {
 			return 0
-		}
-		if res < math.MinInt32/10 || (res == math.MinInt32/10 && temp < -8) {
+		} else if res < math.MinInt32/10 || (res == math.MinInt32/10 && temp < -8) {
 			return 0
 		}
 		// 放入 res 的开头
