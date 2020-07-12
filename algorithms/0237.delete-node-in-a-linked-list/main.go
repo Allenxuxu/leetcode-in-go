@@ -10,6 +10,9 @@ func deleteNode(node *ListNode) {
 	if node == nil {
 		return
 	}
+	toDel := node.Next
 	node.Val = node.Next.Val
 	node.Next = node.Next.Next
+
+	toDel.Next = nil
 }
