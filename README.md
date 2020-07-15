@@ -12,6 +12,7 @@
 | 0169 | [多数元素](./algorithms/0169.majority-element/README.md) |
 | 0217 | [存在重复元素](./algorithms/0217.contains-duplicate/README.md) |
 | 0219 | [存在重复元素 II](./algorithms/0219.contains-duplicate-ii/README.md) |
+| 0204 | [计数质数](./algorithms/0204.count-primes/README.md) |
 
 ## 双指针法
 
@@ -149,3 +150,4 @@
 | 0146 | [LRU 缓存机制](./algorithms/0146.lru-cache/README.md) |
 | 0155 | [最小栈](./algorithms/0155.min-stack/README.md) |
 | 0641 | [设计循环双端队列](./algorithms/0641.design-circular-deque/README.md) |
+| 0105 | [从前序与中序遍历序列构造二叉树](./algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal/README.md) |
