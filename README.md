@@ -51,6 +51,7 @@
 | 0127 | [单词接龙](./algorithms/0127.word-ladder/README.md) |
 | 0200 | [岛屿数量](./algorithms/0200.number-of-islands/README.md) |
 | 0131 | [分割回文串](./algorithms/0131.palindrome-partitioning/README.md) |
+| 0079 | [单词搜索](./algorithms/0079.word-search/README.md) |
 
 ## 数组、字符串
 
