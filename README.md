@@ -140,7 +140,7 @@
 |:---:|:---:|
 | 0069 | [x的平方根](./algorithms/0069.sqrtx/README.md) |
 | 0034 | [在排序数组中查找元素的第一个和最后一个位置](./algorithms/0034.search-for-a-range/README.md) |
-
+| 0410 | [分割数组的最大值](./algorithms/0410.split-array-largest-sum/README.md) |
 
 ## 其他
 
@@ -150,4 +150,3 @@
 | 0155 | [最小栈](./algorithms/0155.min-stack/README.md) |
 | 0641 | [设计循环双端队列](./algorithms/0641.design-circular-deque/README.md) |
 | 0105 | [从前序与中序遍历序列构造二叉树](./algorithms/0105.construct-binary-tree-from-preorder-and-inorder-traversal/README.md) |
-| 0410 | [分割数组的最大值](./algorithms/0410.split-array-largest-sum/README.md) |
